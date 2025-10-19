@@ -1,0 +1,26 @@
+{
+  "name": "video-scraper-api",
+  "version": "1.0.0",
+  "description": "A Vercel API for scraping videos from batibot.org",
+  "main": "api/scrape-videos.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required'",
+    "start": "node api/scrape-videos.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.15.0"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": [
+    "puppeteer",
+    "scraping",
+    "video",
+    "api",
+    "vercel"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
