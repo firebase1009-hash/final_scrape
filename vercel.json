@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "functions": {
-    "api/scrape-videos.js": {
-      "maxDuration": 30
+  "builds": [
+    {
+      "src": "api/scrape-videos.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "routes": [
+    {
+      "src": "/api/scrape-videos",
+      "dest": "/api/scrape-videos"
+    }
+  ]
 }
